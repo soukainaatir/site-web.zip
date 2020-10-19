@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SITE WEB D'UN COMMERCE</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	  
+	<div class="container"> 
+ <div class="navbar">
+ 	<div class="logo">
+ 		<img src="logo.jpg" width="125px">
+ 	</div>
+ 	<nav>
+ 		<ul>
+ 			 <li><a href="index.html "> home</a></li>
+ 			<li><a href="products.html ">products</a></li>
+ 			<li><a href="about.html ">détail-products</a></li>
+ 			<li><a href=" cart.html"> cart</a></li>
+ 			<li><a href="acount.html">account</a></li>
+ 		</ul>
+ 	</nav>
+ 	<img src=" image2.jpg" width="30px" height="30px">
+ 	 
+ </div>
+</div>
+<!-----------------------account-page------------------>
+ <div class="account-page">
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="col-2">
+ 				<img src="imade.jpg" width="100%">
+ 			</div>
+ 			<div class="col-2">
+ 				<div class="form-container">
+ 					<div class="form-btn">
+ 						<span onclick="Login()">Login</span>
+ 						<span onclick="Register()">Register</span>
+                         <hr id="Indicator">
+ 					</div>
+ 					<form id="LoginForm">
+ 						<input type="text" name="" placeholder="Username">
+ 						<input type="password" name="" placeholder="password">
+ 						<button type="submit" class="btn">Login</button>
+ 						<a href="">Forgot password</a>
+ 					</form>
+ 					 <form id="RegForm"> 
+ 						<input type="text" name="" placeholder="Username">
+ 						<input type="email" name="" placeholder=" Email">
+ 						<input type="password" name="" placeholder="password">
+ 						<button type="submit" class="btn"> Register</button>
+ 						 
+ 					</form>
+ 				</div>
+ 				
+ 			</div>
+ 			
+ 		</div>
+ 		
+ 	</div>
+ 	
+ </div>
+<!--------------footer------------------------>
+ <div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Dowload Our App</h3>
+					<p>Dowload App for Android and ios mobile phone.</p>
+					<div class="app-logo">
+						<img src="imagesa (3).jpg">
+						<img src="imagesS.png">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					 <img src="d5an9n7-ab138d32-8da0-42d4-b3cf-ef51e34d08ac.png" width="500px">
+					<p>Our purpose Is to sustainably make the pleasure and<br> benefits of sports accessible to the many.  </p>
+				</div>
+				<div class="footer-col-3">
+					<h3> Userful Links </h3>
+				 <ul>
+				 	<li>coupons</li>
+				 	<li>Blog post</li>
+				 	<li>return policy</li>
+				 	<li>join affiliate</li>
+				 </ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>  Follow us </h3>
+				 <ul>
+				 	<li> Facebook</li>
+				 	<li> Twitter</li>
+				 	<li> instagram</li>
+				 	<li> Youtube</li>
+				 </ul>
+				</div>
+			</div>
+
+		</div>
+		 
+	</div>
+	<!--------------------js for toggle form---------->
+	<script>
+		var LoginForm = document.getElementById("LoginForm");
+		var RegForm = document.getElementById("RegForm");
+		var Indicator = document.getElementById(" Indicator");
+		function Register(){
+			RegForm.style.transform = "translateX(0px)";
+			LoginForm.style.transform = "translateX(0px)";
+			Indicator.style.transform = "translateX(100px)";
+		}
+		function Login(){
+			RegForm.style.transform = "translateX(300px)";
+			LoginForm.style.transform = "translateX(300px)";
+			Indicator.style.transform = "translateX(0px)";
+		}
+	</script>	
+	</body>
+	</html> 
